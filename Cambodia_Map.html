@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cambodia</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/197/197505.png" type="image/x-icon">
+         <style>
+            body {
+                font-family: 'Poppins', sans-serif; 
+                padding: 20px;
+                font-size: 25px;
+                margin: 0;
+             
+            }
+             
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 200px;
+            }
+            
+            .title{
+                margin-left: 50px;
+                font-weight: 600;
+                color: #ffffff;
+                border:2px solid #e9ecef;
+                background-color: #0A400C;
+                text-align: center;
+                padding: 10px 20px;
+                border-radius: 6px ;
+            }
+            
+            .container{
+                display: flex;
+                gap: 10px;
+                flex-direction: row;
+                margin-right: 50px;
+                border: #0A400C solid;
+                border-radius: 10px;
+                background-color: #0A400C;
+                color: white;
+            }
+            
+            .nav-item {
+                font-family: 'Poppins', sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+                padding: 8px 5px;
+                border: none;
+                border-radius: 6px;
+                transition: all 0.3s ease;
+                text-align: center;
+                min-width: 100px;
+            }
+            
+            .nav-item:hover {
+                background-color: #819067;
+                color: white;
+                border-color: #819067;
+                transform: translateY(-1px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+            .main-content{
+                text-transform: capitalize;
+            }
+            .information{
+                margin-left: 50px;
+                font-weight: 600;
+                color: #819067;
+                border:2px solid #e9ecef;
+                background-color: #FEFAE0;
+                text-align: center;
+                padding: 0px 20px;
+                border-radius: 20px ;
+                transition: all 0.3s ease;
+            }
+            .information:hover{
+                transform: translate(-2px);
+                background-color: white;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+            .map{
+                border-radius: 10px;
+                border:2px solid #e9ecef;
+                background-color: white;
+                transition: all 0.3s ease;
+                margin-bottom: 50px;
+            }
+            .map:hover{
+                transform: translate(-5px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+        </style>
+       
+    </head>
+    <body>
+        <div class="header">
+            <div class="title">Discover Cambodia</div>
+            <div class="container">
+                <div class="nav-item" onclick="alert('About Cambodia clicked!')">About Cambodia</div>
+                <div class="nav-item" onclick="alert('Project clicked!')">Project</div>
+                <div class="nav-item" onclick="alert('Me clicked!')">Me</div>
+                <div class="nav-item" onclick="alert('Feedback clicked!')">Feedback</div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <center>
+                <p style="margin-bottom: -10px;"> "Explore the kingdom of wonder,  Province by Province" </p>
+                <p style="font-size: 20px; color: #819067; "> <b> This is Cambodia </b> </p>
+                <br>
+                <br>
+            </center>
+        </div>
+            <div class="map">
+                <center>
+                    <img src="Image/Provincial_Boundaries_in_Cambodia.svg.png "
+                    style="margin-bottom: 10px;" 
+                    usemap="#cammap" 
+                    alt="Cambodia Map">
+                </center>
+            </div>
+            
+               
+
+        <div class="information">
+            <p style="text-align: center; font-size: 20px;"><b>Fun Fact!</b></p>
+            <p style="font-size: 15px; text-align: center;">
+                Did you know that Cambodia is home to 25 diverse provinces, over 15 million people, and more than a thousand years of rich history? Explore highlights from provinces like Siem Reap, Kampot, and Battambang, and get insider travel tips on the best time to visit, how to get around, and local customs to make the most of your journey!
+            </p>
+        </div>
+
+        <map name="cammap">
+            <area shape="poly" coords="513,87,574,73,607,82,633,114,651,93,682,133,738,139,769,144,790,173,749,178,721,186,718,207,718,223,720,246,721,265,697,279,657,305,638,326,605,345,592,300,555,300,532,304,548,258,518,250,495,243,496,207,490,188" href="Preah-Vihear.html" alt="Preah Vihear">
+            <area shape="poly" coords="228,108,304,83,340,80,393,87,474,80,505,89,506,114,512,129,498,165,456,175,345,163,308,183,282,153,265,169,262,134" href="oddar-meanchey.html" alt="Oddar Meanchey">
+            <area shape="poly" coords="301,281,302,257,306,217,304,179,346,165,456,172,495,171,491,183,490,195,501,213,499,243,518,251,544,260,530,285,526,311,514,330,504,355,480,378,459,387,426,324" href="siem-reap.html" alt="Siem Reap">
+            <area shape="poly" coords="222,113,203,149,171,200,135,218,147,236,93,241,97,256,156,258,160,276,212,283,257,276,300,283,295,232,301,201,303,175,286,159,251,154,257,142" href="bantey-menchey.html" alt="Banteay Meanchey">
+            <area shape="poly" coords="717,190,771,178,823,175,844,144,806,86,861,62,910,41,952,75,962,143,931,158,939,195,918,224,910,242,929,279,926,290,905,281,863,278,831,283,811,313,794,325,784,331,750,318,728,311" href="Stung-Treng.html" alt="Stung Treng">
+            <area shape="poly" coords="930,163,964,96,1014,68,1067,42,1109,23,1090,72,1074,126,1092,160,1113,224,1130,283,1110,296,1097,289,1069,294,1054,283,1033,291,1019,290,1008,322,953,310,931,292,914,220,938,196" href="ratanakiri.html" alt="Ratanakiri">
+            <area shape="poly" coords="731,312,750,390,763,468,756,504,774,507,808,519,817,532,821,543,842,551,845,567,893,564,937,560,963,540,930,495,877,450,926,379,879,333,873,278,825,290,781,342" href="kratie.html" alt="Kratie">
+            <area shape="poly" coords="88,264,123,356,145,335,166,372,168,408,130,427,173,473,226,465,261,451,287,446,314,455,340,448,345,419,345,394,359,370,368,354,358,330,333,296" href="Battambang.html" alt="Battambang">
+            <area shape="poly" coords="173,479,162,524,176,553,244,568,283,555,295,539,320,535,342,555,369,575,382,587,401,574,423,579,430,553,450,547,450,513,490,476,453,444,429,400,365,363,343,396,344,420,340,449,330,455,292,446,249,461,228,470" href="Pursat.html" alt="Pursat">
+            <area shape="poly" coords="173,561,202,625,228,674,244,694,228,711,236,755,238,773,257,778,291,784,306,740,325,725,345,742,357,779,377,774,375,744,384,726,404,689,420,667,391,643,372,613,372,588,383,587,372,574,354,571,339,560,319,541,295,541,274,557,269,567,251,569,237,572,203,560" href="Koh-kong.html" alt="Koh-kong">
+            <area shape="poly" coords="315,829,329,808,346,808,357,787,374,778,376,748,389,728,390,711,423,675,422,702,420,725,425,744,428,756,405,761,401,776,398,794,398,809,401,821,401,832,375,849,369,869,334,856" href="Preah-sihanouk.html" alt="Preah-sihanouk">
+            <area shape="poly" coords="399,839,410,821,399,804,401,766,426,755,429,726,449,739,483,737,495,732,509,746,517,769,521,782,549,783,553,801,547,822,553,839,553,850,537,855,520,872,499,866,486,840,468,842,433,846" href="kampot.html" alt="Kampot">
+            <area shape="poly" coords="497,736,516,754,517,777,545,778,554,809,550,827,556,848,581,859,606,831,625,820,622,794,622,780,609,758,613,732,606,719,602,703,581,690,559,690,550,738,526,744" href="takeo.html" alt="takeo">
+            <area shape="poly" coords="422,718,444,729,465,748,490,732,524,737,547,737,567,677,540,668,554,623,562,595,538,604,513,614,477,600,469,580,458,563,443,549,435,562,414,579,401,579,388,586,372,588,372,622,388,643,427,668,423,682" href="kampong-speu.html" alt="kampong-speu">
+            <area shape="poly" coords="554,637,551,665,572,595,600,599,623,604,636,616,651,662,644,659,659,671,660,716,642,769,616,766,607,697,566,669,640,675,614,642,604,609" href="kandal.html" alt="Kandal">
+            <area shape="poly" coords="645,614,679,592,699,610,754,614,766,643,747,657,736,695,738,710,726,743,729,761,702,765,673,784,655,775,658,724,669,696,666,671,642,648" href="prey-veng.html" alt="prey-veng">
+            <area shape="poly" coords="590,514,655,517,643,483,674,485,697,459,708,470,757,455,766,483,751,507,721,491,713,531,714,543,698,558,695,592,670,585,640,614,623,603,604,584,581,587,592,538" href="kampong-cham.html" alt="kampong-cham">
+            <area shape="poly" coords="696,601,717,539,730,498,763,504,776,516,801,519,817,537,838,553,846,571,889,576,894,605,897,622,868,615,847,606,822,601,802,632,773,636,753,614" href="tbong-kmoum.html" alt="tbong-kmoum">
+            <area shape="poly" coords="469,845,486,848,495,869,474,864" href="Kep.html" alt="Keb">
+            <area shape="poly" coords="454,510,489,492,495,460,537,444,575,453,587,488,588,512,585,532,584,546,588,557,577,567,558,598,522,604,496,610,464,573,454,551" href="kampong-chhnang.html" alt="kampong-chhnang">
+            <area shape="poly" coords="119,365,120,392,121,416,143,424,168,405,169,357,149,338,135,361,141,359" href="Pailin.html" alt="Pailin">
+            <area shape="poly" coords="509,435,509,411,473,379,503,359,523,311,588,295,593,336,601,345,652,308,716,271,727,318,730,343,735,372,744,401,748,437,754,451,719,461,706,471,699,461,678,481,641,476,656,507,647,516,617,516,596,507,588,507,584,474,572,445,527,432" href="kampong-thom.html" alt="kampong-thom">
+            <area shape="poly" coords="756,652,778,648,781,671,781,694,791,706,798,720,825,730,846,753,839,761,844,797,820,796,800,776,795,792,778,787,778,774,765,764,754,757,735,757,739,715,744,664" href="svat-rieng.html" alt="svat-rieng">
+            <area shape="poly" coords="876,331,913,324,890,281,950,312,996,333,1013,324,1010,354,1036,290,1063,286,1062,318,1062,334,1053,365,1068,339,1083,311,1086,299,1122,303,1094,367,1109,395,1121,441,1113,479,1086,506,1067,487,1028,517,996,535,961,541,959,499,931,499,901,468,893,426,885,443,895,444" href="mondulkiri.html" alt="mondulkiri">
+            <area shape="poly" coords="596,616,589,626,574,626,566,640,562,657,567,667,589,660,612,659,601,647" href="Phnom-Penh.html" alt="Phnom-Penh">
+    </body>
+</html>
